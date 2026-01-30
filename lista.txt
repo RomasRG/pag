@@ -1,0 +1,21 @@
+Parte 1: Túmulo dos Vagalumes
+-Titulo cabeçalho
+
+Parte 2: o Rei Leão
+-Binário >> ASCII >> Panthera leo roosevelti >> Rei Leão
+
+Parte 3: O fantástico sr raposo
+-Sources >> foto raposa
+
+Parte 4: Your Name
+-Console
+console.log(mariana) >> Seu Nome >> Your Name
+
+Parte 5: Klaus
+-Acessar Cookies por curl
+
+Final:
+compilado de gatinhos
+
+
+

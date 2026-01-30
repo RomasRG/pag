@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<header>
+<title>Lampyridae</title>
+</header>
+<body>
+<div id="parte"></div>
+<div id="dica"></div>
+<input id="input">
+<button id="botao">enter</button>
+<img style='width:1px; height:1px;' src='https://static.wikia.nocookie.net/mundo-animal/images/3/3f/Raposa-vermelha.jpg/revision/latest?cb=20140315203858&path-prefix=pt'>
+<script>
+let fase = 0;
+let parte = document.getElementById('parte');
+let dica = document.getElementById('dica');
+let input = document.getElementById('input');
+let botao = document.getElementById('botao');
+let titulo = document.createElement('h1');
+let pista = document.createElement('p');
+let mariana = 'seu nome';
+
+function setParte(texto){
+	titulo.innerText = texto;
+	parte.innerHTML = "";
+	parte.appendChild(titulo);
+}
+function setDica(texto){
+	pista.innerText = texto;
+	dica.innerHTML = "";
+	dica.appendChild(pista);
+}
+document.cookie = "meuCookie=123; path=/; SameSite=Lax"
+setParte('Parte 1/5');
+setDica('Olhe para cima');
+alert("1- Descubra o nome do filme\n2- Utilize todo navegador e pc para isso\n3- Digite a senha sem acentos ou maiusculas e clique em enter.");
+botao.addEventListener('click', function(){
+if(input.value == "tumulo dos vagalumes"){
+	setParte('Parte 2/5');
+	setDica("Bin => ASCII\n01010000 01100001 01101110 01110100 01101000 01100101 01110010 01100001 00100000 01101100 01100101 01101111 00100000 01110010 01101111 01101111 01110011 01100101 01110110 01100101 01101100 01110100 01101001");
+}
+if(input.value == "o rei leao"){
+	setParte('Parte 3/5');
+	setDica('1. Ctrl + Shift + I\n2. Sources\n3. static.wikia.nocookie.net');
+}
+if(input.value == "o fantastico senhor raposo"){
+	setParte('Parte 4/5');
+	setDica('1. Ctrl + Shift + I\n2. Console\n3. console.log(mariana)');
+}
+if(input.value == "your name"){
+	setParte('Parte 5/5');
+	setDica('');
+}
+});
+
+</script>
+</body>
+</html>
