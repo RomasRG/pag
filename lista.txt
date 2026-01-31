@@ -13,6 +13,8 @@ console.log(mariana) >> Seu Nome >> Your Name
 
 Parte 5: Klaus
 -Acessar Cookies por curl
+-Bin -> ASCII
+-
 
 Final:
 compilado de gatinhos
