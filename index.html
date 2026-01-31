@@ -9,6 +9,11 @@
 <input id="input">
 <button id="botao">enter</button>
 <img style='width:1px; height:1px;' src='https://static.wikia.nocookie.net/mundo-animal/images/3/3f/Raposa-vermelha.jpg/revision/latest?cb=20140315203858&path-prefix=pt'>
+<audio controls>
+  <source style='width:1px; height:1px;' src="morsecode.wav" type="audio/mpeg">
+  Seu navegador não suporta este elemento de áudio.
+</audio>
+
 <script>
 let fase = 0;
 let parte = document.getElementById('parte');
@@ -29,7 +34,6 @@ function setDica(texto){
 	dica.innerHTML = "";
 	dica.appendChild(pista);
 }
-document.cookie = "converta=01110011 01101001 01101110 01110100 01100101 01110010 01101011 01101100 01100001 01100001 01110011"
 setParte('Parte 1/5');
 setDica('Olhe para cima');
 alert("1- Descubra o nome do filme\n2- Utilize todo navegador e pc para isso\n3- Digite a senha sem acentos ou maiusculas e clique em enter.");
@@ -48,7 +52,7 @@ if(input.value == "o fantastico senhor raposo"){
 }
 if(input.value == "your name"){
 	setParte('Parte 5/5');
-	setDica('');
+	setDica('1. Ctrl + Shift + I\n2. Elements\n3. classe\n4. converta');
 }
 });
 
