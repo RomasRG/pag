@@ -36,11 +36,11 @@ function setDica(texto){
 }
 setParte('Parte 1/5');
 setDica('Olhe para cima');
-alert("1- Descubra o nome do filme\n2- Utilize todo navegador e pc para isso\n3- Digite a senha sem acentos ou maiusculas e clique em enter.");
+alert("1- Descubra o nome do filme\n2- Utilize todo navegador e pc para isso\n3- Digite a senha sem acentos ou maiusculas e clique em enter\n4. Para resolver alguns desafios, sera necessario usar ferramentas online, como conversores");
 botao.addEventListener('click', function(){
 if(input.value == "tumulo dos vagalumes"){
 	setParte('Parte 2/5');
-	setDica("Bin => ASCII\n01010000 01100001 01101110 01110100 01101000 01100101 01110010 01100001 00100000 01101100 01100101 01101111 00100000 01110010 01101111 01101111 01110011 01100101 01110110 01100101 01101100 01110100 01101001");
+	setDica("Binario => ASCII\n01010000 01100001 01101110 01110100 01101000 01100101 01110010 01100001 00100000 01101100 01100101 01101111 00100000 01110010 01101111 01101111 01110011 01100101 01110110 01100101 01101100 01110100 01101001");
 }
 if(input.value == "o rei leao"){
 	setParte('Parte 3/5');
@@ -52,7 +52,31 @@ if(input.value == "o fantastico senhor raposo"){
 }
 if(input.value == "your name"){
 	setParte('Parte 5/5');
-	setDica('1. Ctrl + Shift + I\n2. Elements\n3. classe\n4. converta');
+	setDica('Crie uma nova pasta e abra.');
+	var video = document.createElement('video');
+	video.src = 'dica.mp4';
+	video.setAttribute("controls", "");
+	video.setAttribute("width", "600");
+	video.setAttribute("height", "400");
+	dica.appendChild(video);
+}
+if(input.value == "klaus"){
+	setParte("Congratulations!");
+	setDica("");
+	var gif = document.createElement('img');
+	pista.innerText = "Minha princesa também é um gênio! Sabia que ia conseguir, te amo.";
+	var imagem = document.createElement('img');
+	imagem.setAttribute("src", './princesinha.png');
+	imagem.setAttribute("width", '450');
+	imagem.setAttribute("height", '600');
+	gif.setAttribute("src", 'https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExa3kzMHlhY2pqeDg1ZDM3OWNoZHFwZ3lubnpiNDVyMXl1NjUxOGE0OCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/kZqbBT64ECtjy/giphy.gif');
+	gif.setAttribute("width", "50");
+	gif.setAttribute("height","50");
+	dica.appendChild(gif);
+	dica.appendChild(pista);
+	dica.appendChild(imagem);
+	input.remove();
+	botao.remove();
 }
 });
 
